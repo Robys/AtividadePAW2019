@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/normalize.css">
+
+
+    <title> Atividade - PAW - Interestelar</title>
+    <meta name="description" content="Uma pagina referente ao 
+    filme Interestelar para o Exercicio prático da disciplina 
+    Padrões web do curso de Desenvolvimento Web FullStack">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/interHeder.jpg" alt="Interestelar"/>
+        <h1>Interestelar</h1>
+
+        <ul class="Menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#gal">Geleria</a></li>
+        </ul>
+
+    </header>
+
+    <section class="Sobre">
+        <h2 id="sobre">Sobre o Filme</h2>
+        <div class="Sinopse">
+            <img src="img/Stellar-Warner-3.jpg" alt="Cooper e Brand">
+            <p>
+            <strong>SINOPSE</strong> : Após ver a Terra consumindo boa parte de suas reservas naturais, 
+            um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a 
+            população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) 
+            é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos.
+             Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), 
+             ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph 
+             (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para 
+             também tentar salvar a população do planeta.
+            </p>
+        </div>
+    </section>
+
+    <section class="Elenco">
+        <h2>Elenco</h2>
+        <ul>
+            <li><img src="img/elenco-1.png" alt="Matthew McConaughey"></li>
+            <li><img src="img/elenco-2.png" alt="Jessica Chastain"></li>
+            <li><img src="img/elenco-3.png" alt="Anne Hathaway"></li>
+        </ul>
+    </section>
+
+    <section class="Info">
+        <h2>Informações Técnicas</h2>
+
+        <img src="img/elenco-4.png" alt="Cristopher Nolan">
+
+        <p>Título original : <strong lang="en">Interstellar</strong> <br />
+            Gêneros :  Ficção científica, Drama <br />
+            Distribuidor : WARNER BROS. <br />
+            Data de lançamento : 6 de novembro de 2014 (2h 49min) <br />
+            Ano de produção :  2014 <br />
+            Tipo de filme : longa-metragem <br />
+            Nacionalidades : EUA, Reino Unido <br />
+                
+            Não recomendado para menores de 10 anos</p> 
+
+    </section>
+
+    <section class="Trailer">
+        <h2 id="trailer">Trailer</h2>
+
+        <iframe width="600" height="400" controls
+            src="https://www.youtube.com/watch?v=hHBsKHVLAYc">
+        </iframe>
+    </section>
+
+    <section class="Galeria">
+        <h2 id="gal">Galeria</h2>
+
+        <ul>
+            <li class="thumbnail-p" id="tb-a"></li>
+            <li class="thumbnail-p" id="tb-b"></li>
+            <li class="thumbnail-p" id="tb-c"></li>
+        </ul>
+
+        <div id="thumbnail-g"></div>
+        
+    </section>
+
+<footer class="footer">
+    <p class="copyright-text">Copyright &copy; 2019 <a href="#">Robert Oliveira</a> </p>
+    
+</footer>
+
+<script>
+
+var tb_a = document.getElementById('tb-a');
+var tb_b = document.getElementById('tb-b');
+var tb_c = document.getElementById('tb-c');
+
+var tbg = document.getElementById('thumbnail-g');
+tb_a.style.backgroundImage = "url('img/A.jpg')";
+tb_b.style.backgroundImage = "url('img/B.jpg')";
+tb_c.style.backgroundImage = "url('img/C.jpg')";
+tbg.style.backgroundImage = "url('img/A.jpg')";
+
+
+tb_a.addEventListener("click",function(){
+    tbg.style.backgroundImage = "url('img/A.jpg')";
+    //tb_a.style.backgroundImage = "url('img/D.jpg')";
+    tb_b.style.backgroundImage = "url('img/B.jpg')";
+    tb_c.style.backgroundImage = "url('img/C.jpg')";
+});
+
+tb_b.addEventListener("click",function(){
+    tbg.style.backgroundImage = "url('img/B.jpg')";
+    tb_a.style.backgroundImage = "url('img/A.jpg')";
+    //tb_b.style.backgroundImage = "url('img/D.jpg')";
+    tb_c.style.backgroundImage = "url('img/C.jpg')";
+});
+
+tb_c.addEventListener("click",function(){
+    tbg.style.backgroundImage = "url('img/C.jpg')";
+    tb_a.style.backgroundImage = "url('img/A.jpg')";
+    tb_b.style.backgroundImage = "url('img/B.jpg')";
+    //tb_c.style.backgroundImage = "url('img/D.jpg')";
+});
+
+
+</script>
+
+</body>
+
+</html>

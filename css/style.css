@@ -1,0 +1,179 @@
+body{
+    margin:0 auto;
+    background-color: #393939;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Sobre,.Elenco,.Info,.Trailer,.Galeria h2{
+    
+    color:#FFF;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.header img{
+    width: 100%;
+    background-size: cover;
+    background: fixed no-repeat;
+}
+
+.header h1{
+    position: absolute;
+    top:250px;
+    left:30%;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Menu{
+    position: absolute;
+    top:20px;
+    right:20px;
+    letter-spacing: .3em;
+}
+
+.Menu li{
+    display: inline-block;
+    line-height: 28px;
+    font-size: 24px;
+    font-style: normal;
+    
+    text-transform: uppercase;
+    
+}
+
+.Menu li a{
+   text-decoration: none;
+   color:#FFF;
+}
+
+.Menu li a:hover{
+    color:darkgrey;
+}
+
+.Sinopse{
+    
+    margin-top: 20px;
+}
+
+.Sinopse img{
+    position: relative;
+    width: 500px;
+    height: 290px;
+    float: left;
+    left:130px;
+}
+
+.Sinopse p{
+position: absolute;
+width: 569px;
+height: 233px;
+left: 651px;
+top: 557px;
+text-align: left;
+font-weight: lighter;
+font-size: 18px;
+line-height: 21px;
+color: #FFF;
+}
+
+.Elenco{
+
+    position: absolute;
+    margin-top: 340px;
+    left:245px;
+}
+
+
+.Elenco ul{
+    margin-top: 40px;
+}
+
+.Elenco li{
+    display: inline-block;
+    letter-spacing: .5em;
+}
+
+.Info{
+    margin-top: 880px;
+    right:5%;
+}
+
+.Info img{
+    position: absolute;
+    float: left;
+    margin-top: 20px;
+    left: 240px;
+}
+
+.Info p{
+position: absolute;
+font-weight: lighter;
+text-align: left;
+margin-top: 40px;
+width: 625px;
+left:50%;
+font-size: 20px;
+color:#FFF;
+}
+
+.Trailer{
+    margin-top: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Galeria{
+    height: 700px;
+}
+
+.Galeria ul{
+    margin-top: 20px;
+    margin-right: 90px;
+    float:right;
+}
+
+.thumbnail-p{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 170px;
+    background-size: cover;
+}
+
+#thumbnail-g{
+    margin-top: 20px;
+    margin-left: 90px;
+    height: 550px;
+    width: 800px;
+    background-size: cover;
+}
+
+.thumbnail-p:hover{
+    opacity: .25;
+}
+
+.footer{
+    margin-top: 40px;
+    height:60px;
+    width: 100%;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+}
+
+.footer p{
+    padding-top: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #393939;
+}
